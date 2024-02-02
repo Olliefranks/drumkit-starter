@@ -1,0 +1,95 @@
+body {
+  background-color: bisque;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Monoton", sans-serif;
+}
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Monoton", sans-serif;
+  font-size: 500%;
+}
+.drum-pad {
+  position: relative;
+  /* background-color: lightcoral; */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.drum-pad:hover {
+  background-color: lightblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.drum-pad-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://media1.thehungryjpeg.com/thumbs2/ori_3811444_ov3bm6x98acztl9llbm5jim6trmbis71g9tvbulm_comic-bubble-bang-text-cartoon-sound-speech-effect-red-and-yellow-co.jpg);
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 60%;
+}
+
+.drum-pad:hover .drum-pad-inner {
+  opacity: 1;
+}
+
+.drum-pic {
+  position: absolute;
+  margin-top: 35%;
+  border-radius: 30%;
+}
+
+#boom {
+  background-color: red;
+}
+
+#clap {
+  background-color: orange;
+}
+
+#hihat {
+  background-color: yellow;
+}
+#kick {
+  background-color: green;
+}
+#openhat {
+  background-color: blue;
+}
+
+#ride {
+  background-color: indigo;
+}
+#snare {
+  background-color: violet;
+}
+#tink {
+  background-color: silver;
+}
+#tom {
+  background-color: goldenrod;
+}
